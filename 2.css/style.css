@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+@keyframes moving_animation {
+    0% {
+
+        left: 0px;
+        top: 0px;
+        background-color: black;
+
+    }
+
+    25% {
+        left: 800px;
+        top: 0px;
+        background-color: royalblue;
+        transform: skewX(45deg);
+
+    }
+
+    50% {
+        left: 800px;
+        top: 500px;
+        background-color: red;
+        transform: scale(1.5);
+
+    }
+
+    75% {
+        left: 0px;
+        top: 500px;
+        background-color: mediumvioletred;
+        transform: rotate(360deg);
+
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+        background-color: indigo;
+    }
+}
+
+.move_animation {
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    position: relative;
+    animation-name: moving_animation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+
+    -webkit-animation-name: moving_animation;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-direction: alternate;
+}
